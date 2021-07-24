@@ -7,5 +7,13 @@ router.get("/", (req, res, next) => {
 router.get("/home", (req, res, next) => {
   res.send("home");
 });
+router.get("/sampleJson", (req, res, next) => {
+  const sendObj = {
+      school: "Hogwarts",
+      students: ["Harry", "Hermione", "Ron"],
+      teachers: ["Dumbledore", "McGonnagall, Snape, Flitwick"]
+  }
+    res.json(sendObj)
+});
 
 module.exports = router;
