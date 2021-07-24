@@ -10,8 +10,12 @@ router.get("/home", (req, res, next) => {
 router.get("/sampleJson", (req, res, next) => {
   const sendObj = {
       school: "Hogwarts",
-      students: ["Harry", "Hermione", "Ron"],
-      teachers: ["Dumbledore", "McGonnagall, Snape, Flitwick"]
+      students: ["Harry", "Hermione", "Ron", "Ginny", "Neville", "Luna"],
+      teachers: ["Dumbledore", "McGonnagall, Snape, Flitwick"],
+      deathEaters: ["Bellatrix, Malfoy", "Carrow"],
+      looser: "Voldemort",
+      ghosts: ["Nearly-Headless Nick", "Bloody Baron", "Peeves"],
+      muggles: ["Darsleys"]
   }
     res.json(sendObj)
 });
